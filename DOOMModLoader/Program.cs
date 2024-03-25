@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Diagnostics;
@@ -28,7 +28,7 @@ namespace DOOMModLoader
             string modDir = "mods";
             string exeName = "DOOMx64.exe";
 
-            Console.WriteLine("DOOMModLoader 0.2 by infogram - https://github.com/emoose/DOOMExtract");
+            Console.WriteLine("DOOMModLoader 0.8 by jfmherokiller - https://github.com/jfmherokiller/DOOMExtract");
             Console.WriteLine();
 
             for (int i = 0; i < args.Length; i++)
@@ -227,7 +227,7 @@ namespace DOOMModLoader
 
             var proc = new Process();
             proc.StartInfo.FileName = exeName;
-            proc.StartInfo.Arguments = $"+com_gameMode {gameMode} +com_restarted 1 +devMode_enable 1";
+            proc.StartInfo.Arguments = $"+com_gameMode {gameMode} +com_restarted 1 +devMode_enable 1 +com_skipIntroVideo 1 +set m_smooth 0 +com_skipKeyPressOnLoadScreens 1";
             proc.Start();
         }
 
