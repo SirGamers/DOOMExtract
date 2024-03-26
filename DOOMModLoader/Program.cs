@@ -28,7 +28,7 @@ namespace DOOMModLoader
             string modDir = "mods";
             string exeName = "DOOMx64.exe";
 
-            Console.WriteLine("DOOMModLoader 0.8 by jfmherokiller - https://github.com/jfmherokiller/DOOMExtract");
+            Console.WriteLine("DOOMModLoader 0.8 by jfmherokiller, modified by SirGamers - https://github.com/SirGamers/DOOMExtract");
             Console.WriteLine();
 
             for (int i = 0; i < args.Length; i++)
