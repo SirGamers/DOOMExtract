@@ -227,7 +227,7 @@ namespace DOOMModLoader
 
             var proc = new Process();
             proc.StartInfo.FileName = exeName;
-            proc.StartInfo.Arguments = $"+com_gameMode {gameMode} +com_restarted 1 +devMode_enable 1 +com_skipIntroVideo 1 +set m_smooth 0 +com_skipKeyPressOnLoadScreens 1";
+            proc.StartInfo.Arguments = $"+com_gameMode {gameMode} +com_restarted 1 +devMode_enable 1 +com_skipIntroVideo 1 +set m_smooth 0";
             proc.Start();
         }
 
